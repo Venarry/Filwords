@@ -58,6 +58,8 @@ public class GridGenerator : MonoBehaviour
         // Размещаем оставшиеся слова в сетке
         foreach (var word in wordsToPlace)
         {
+            Debug.Log(word);
+
             if (!TryPlaceWordWithTurns(word))
             {
                 Debug.LogWarning($"Не удалось разместить слово: {word}");
